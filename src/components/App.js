@@ -3,25 +3,10 @@ import youtube from './api/youtube'
 import SearchBar from '../components/SearchBar'
 import VideoList from '../components/VideoList'
 import VideoDetail from '../components/VideoDetail'
-import axios from 'axios'
-const KEY = 'AIzaSyAg31uIyEcO0UReD-qBhAD38w1T-oTF1c4'
 
 
 class App extends React.Component{
     state = { videos: [], selectedVideo: null }
-
-    /**
-     * YOUT TUBE API FOR PRODUCTION
-     */
-     youtube = axios.create({
-        baseURL: 'https://www.googleapis.com/youtube/v3',
-        params: {
-            part: 'snippet',
-            maxResults: 5,
-            key: KEY
-        }
-     })
-    
     
     /**
      * @Runs when the app is mounted
@@ -37,7 +22,7 @@ class App extends React.Component{
      * @PARAM serch term
      */
     onTermSubmit = async term => { 
-        const response = await this.youtube.get('/search', {
+        const response = await youtube.get('/search', {
             params: {
                 q: term
             }
