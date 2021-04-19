@@ -1,5 +1,5 @@
 import React from 'react'
-import youtube from './apis/youtube'
+import youtube from './api/youtube'
 import SearchBar from '../components/SearchBar'
 import VideoList from '../components/VideoList'
 import VideoDetail from '../components/VideoDetail'
