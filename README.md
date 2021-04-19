@@ -1,8 +1,10 @@
-# App Detail
+# youtube-clone using React
     React app that uses Youtube public api to fetch videos and play videos
+    
+    ***** TO GET RID OF ADDVERTISEMENT *******
 
 ## Technology
-    React, Youtube Api (App, SearchBar, VideoList, VideoItem, VideoDetail)
+    React, Youtube Api 
 
 ## Installation 
     1. Clone the app 
@@ -15,7 +17,7 @@
 3.1 $ mkdir src/api
 3.2 $ cd src/api
 3.3 $ touch youtube.js
-3.4 paste following code
+3.4 paste following code (AND CHANGE YOUR KEY, THIS KEY WON'T WORK) 
 ```
 
 ```
@@ -31,7 +33,8 @@
         }
     })
 ```
-
+### PREVIEW
+[LIVE DEMO](https://amrityoutubeclone.netlify.app)
 
     
 ### Creator 
