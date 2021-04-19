@@ -4,7 +4,7 @@ import SearchBar from '../components/SearchBar'
 import VideoList from '../components/VideoList'
 import VideoDetail from '../components/VideoDetail'
 import axios from 'axios'
-const KEY = 'AIzaSyAg31uIyEcO0UReD-qBhAD38w1T-oTF1c4'
+const KEY = 'AIzaSyDzHbrHiWvarJSDkMMeXsvJzz3OFNJz970'
 
 class App extends React.Component{
     state = { videos: [], selectedVideo: null }
