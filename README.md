@@ -7,15 +7,17 @@
 ## Installation 
     1. Clone the app 
     2. npm install 
-    3. Update the public api key (see below step)
+    3. Create the public api key (see Youtube step)
     4. npm start 
 
-    ### 
-        1. $ mkdir src/api
-        2. $ cd src/api
-        3. $ touch youtube.js
+## Youtube step
+``` 
+3.1 $ mkdir src/api
+3.2 $ cd src/api
+3.3 $ touch youtube.js
+3.4 paste following code
+```
 
-        4. paste following code
 ```
     import axios from 'axios'
     const KEY = 'AIzaSyAg31uIyEcO0UReD-qBhAD38w1T-oTF1c4'
